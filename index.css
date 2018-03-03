@@ -29,7 +29,7 @@ h1{
 }
 
 .sec {
-	overflow: auto;
+	overflow: scroll;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: flex-start;
