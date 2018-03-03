@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex-Practice</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Flexible Box Layout</h1>	
+	</div>
+	
+	<section class="content">
+		
+		<p>[ flex ]</p>
+		<div class="sec">
+			<!-- flex -->
+			<div class="tab">
+				<div class="title">
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox">
+					<div class="item" style="width: 100px">width: 100px</div>
+					<div class="item" style="flex: 2">flex: 2</div>
+					<div class="item" style="flex: 1">flex: 1</div>
+				</div>
+			</div>
+			<!-- flex margin -->
+			<div class="tab">
+				<div class="title">
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox showboxh boxborder">
+					<div class="item" style="margin-right: 10px;">
+						<span>width: 150px;</span>
+						<span>margin-right: 10px</span>
+					</div>
+					<div class="item" style="flex: 1;">flex: 1</div>
+					<div class="item" style="margin-left: 10px;">
+						<span>width: 150px;</span>
+						<span>margin-left: 10px</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<p>[ flex-direction ]</p>
+		<div class="sec">
+			<!-- flex-diection:row -->
+			<div class="tab">
+				<div class="title">
+					<p>display: flex;</p>
+					<p>flex-diection: row; /*default*/</p>
+				</div>
+				<div class="showbox">
+					<div class="item" style="flex: 1">flex: 1</div>
+					<div class="item" style="flex: 2">flex: 2</div>
+					<div class="item" style="flex: 3">flex: 3</div>
+				</div>
+			</div>
+			<!-- flex-diection:row-reverse -->
+			<div class="tab">
+				<div class="title">
+					<p>display: flex;</p>
+					<p>flex-diection: row-reverse;</p>
+				</div>
+				<div class="showbox showbox-reverse">
+					<div class="item" style="flex: 1;">flex: 1</div>
+					<div class="item" style="flex: 2;">flex: 2</div>
+					<div class="item" style="flex: 3;">flex: 3
+					</div>
+				</div>
+			</div>
+			<!-- flex-direction: column; -->
+			<div class="tab">
+				<div class="title">
+					<p>display: flex;</p>
+					<p>flex-diection: row-reverse;</p>
+				</div>
+				<div class="showbox showbox-column">
+					<div class="item" style="flex: 1;">flex: 1</div>
+					<div class="item" style="flex: 2;">flex: 2</div>
+					<div class="item" style="flex: 3;">flex: 3
+					</div>
+				</div>
+			</div>
+			<!-- flex-direction: column-reverse; -->
+			<div class="tab">
+				<div class="title">
+					<p>display: flex;</p>
+					<p>flex-diection: showbox-column-reverse;</p>
+				</div>
+				<div class="showbox showbox-column-reverse">
+					<div class="item" style="flex: 1;">flex: 1</div>
+					<div class="item" style="flex: 2;">flex: 2</div>
+					<div class="item" style="flex: 3;">flex: 3
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<p>[ flex-wrap ]</p>
+		<div class="sec" style="width: 1310px">
+			<!-- nowrap -->
+			<div class="tab">
+				<div class="title">
+					<p>display: flex;</p>
+					<p>flex-wrap: nowrap; /*default*/</p>
+				</div>
+				<div class="showbox showbox-nowrap">
+					<div class="item" style="width: 100px">100px</div>
+					<div class="item" style="width: 200px">width: 200px</div>
+					<div class="item" style="width: 300px">width: 300px</div>
+				</div>
+			</div>
+			<!-- wrap -->
+			<div class="tab">
+				<div class="title">
+					<p>display: flex;</p>
+					<p>flex-wrap: wrap;</p>
+				</div>
+				<div class="showbox showbox-wrap boxborder">
+					<div class="item" style="width: 100px">100px</div>
+					<div class="item" style="width: 200px">width: 200px</div>
+					<div class="item" style="width: 300px">width: 300px</div>
+				</div>
+			</div>
+			<!-- wrap-reverse -->
+			<div class="tab">
+				<div class="title">
+					<p>display: flex;</p>
+					<p>flex-wrap: wrap-reverse;</p>
+				</div>
+				<div class="showbox showbox-wrap-reverse boxborder">
+					<div class="item" style="width: 100px">100px</div>
+					<div class="item" style="width: 200px">width: 200px</div>
+					<div class="item" style="width: 300px">width: 300px</div>
+				</div>
+			</div>
+		</div>
+
+		<p>[ justify-content ]</p>
+		<div class="sec" style="width: 1310px">
+			<!-- justify-content: flex-start -->
+			<div class="tab">
+				<div class="title">
+					<p>/* float: left; */</p>
+					<p>display: flex;</p>
+					<p>justify-content: flex-start; /*default*/</p>
+				</div>
+				<div class="showbox boxborder" style="justify-content: flex-start;">
+					<div class="item" style="width: 100px">width: 100px</div>
+					<div class="item" style="width: 100px">width: 100px</div>
+				</div>
+			</div>
+			<!-- justify-content: flex-end; -->
+			<div class="tab">
+				<div class="title">
+					<p>/* float: right; */</p>
+					<p>display: flex;</p>
+					<p>justify-content: flex-end;</p>
+				</div>
+				<div class="showbox boxborder" style="justify-content: flex-end;">
+					<div class="item" style="width: 100px">width: 100px</div>
+					<div class="item" style="width: 100px">width: 100px</div>
+				</div>
+			</div>
+			<!-- justify-content: center; -->
+			<div class="tab">
+				<div class="title">
+					<p>/* Pack items around the center */</p>
+					<p>display: flex;</p>
+					<p>justify-content: center;</p>
+				</div>
+				<div class="showbox boxborder" style="justify-content: center;">
+					<div class="item" style="width: 100px">width: 100px</div>
+					<div class="item" style="width: 100px">width: 100px</div>
+				</div>
+			</div>
+			<!-- justify-content: space-between; -->
+			<div class="tab">
+				<div class="title">
+					<p>display: flex;</p>
+					<p>justify-content: space-between;</p>
+				</div>
+				<div class="showbox boxborder" style="justify-content: space-between;">
+					<div class="item" style="width: 100px">width: 100px</div>
+					<div class="item" style="width: 100px">width: 100px</div>
+				</div>
+			</div>
+			<!-- justify-content: space-around; -->
+			<div class="tab">
+				<div class="title">
+					<p>display: flex;</p>
+					<p>justify-content: space-around;</p>
+				</div>
+				<div class="showbox boxborder" style="justify-content: space-around;">
+					<div class="item" style="width: 100px">width: 100px</div>
+					<div class="item" style="width: 100px">width: 100px</div>
+				</div>
+			</div>
+		</div>
+
+		<p>[ align-self ]</p>
+		<div class="sec">
+			<div class="tab" style="width: 1020px">
+				<div class="title">
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox boxborder" style="width: 1000px; height: 200px;">
+					<div class="item" style="align-self:flex-start; width: 200px;">align-self: flex-start;</div>
+					<div class="item" style="align-self:flex-end; width: 200px;">align-self: flex-end;</div>
+					<div class="item" style="align-self:center; width: 200px;">align-self: center;</div>
+					<div class="item" style="align-self:auto; width: 200px;">
+						<span>align-self: auto;</span>
+						<span>/*default */</span>
+					</div>
+					<div class="item" style="align-self:baseline; width: 200px;">align-self: baseline;</div>
+					<div class="item" style="align-self:stretch; width: 200px;">align-self: stretch;</div>
+				</div>
+			</div>
+		</div>
+
+		<p>[ align-items ]</p>
+		<div class="sec">
+			<!-- align-items: flex-start -->
+			<div class="tab">
+				<div class="title">
+					<p>align-items: flex-start; /* default */</p>
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox boxborder" style="align-items: flex-start;height:200px;">
+					<div class="item" style="width: 100px">width: 100px</div>
+					<div class="item" style="width: 100px">width: 100px</div>
+				</div>
+			</div>
+			<!-- align-items: flex-end -->
+			<div class="tab">
+				<div class="title">
+					<p>align-items: flex-end;</p>
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox boxborder" style="align-items: flex-end;height:200px;">
+					<div class="item" style="width: 100px">width: 100px</div>
+					<div class="item" style="width: 100px">width: 100px</div>
+				</div>
+			</div>
+			<!-- align-items: center -->
+			<div class="tab">
+				<div class="title">
+					<p>align-items: center;</p>
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox boxborder" style="align-items: center;height:200px;">
+					<div class="item" style="width: 100px">width: 100px</div>
+					<div class="item" style="width: 100px">width: 100px</div>
+				</div>
+			</div>
+			<!-- align-items: baseline -->
+			<div class="tab">
+				<div class="title">
+					<p>align-items: baseline;</p>
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox boxborder" style="align-items: baseline;height:200px;">
+					<div class="item" style="width: 100px">width: 100px</div>
+					<div class="item" style="width: 100px">width: 100px</div>
+				</div>
+			</div>
+			<!-- align-items: stretch -->
+			<div class="tab">
+				<div class="title">
+					<p>align-items: stretch;</p>
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox boxborder" style="align-items: stretch;height:200px;">
+					<div class="item" style="width: 100px;height: 100px;">height: 100px</div>
+					<div class="item" style="width: 150px;min-height: 20px;">min-height: 20px;</div>
+					<div class="item" style="width: 150px;max-height: 60px;">max-height: 60px;</div>
+				</div>
+			</div>
+		</div>
+			
+		<p>[ align-content ]</p>
+		<div class="sec">
+			<!-- align-items: flex-start -->
+			<div class="tab">
+				<div class="title">
+					<p>align-items: flex-start; <span style="color: red">/* compare to align-content*/</span></p>
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox showbox-align-content" style="align-items: flex-start;">
+					<div class="item" >a</div>
+					<div class="item" >b</div>
+					<div class="item" >c</div>
+					<div class="item" >d</div>
+					<div class="item" >e</div>
+					<div class="item" >f</div>
+				</div>
+			</div>
+			<!-- align-content: flex-start -->
+			<div class="tab">
+				<div class="title">
+					<p>align-content: flex-start;</p>
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox showbox-align-content" style="align-content: flex-start;">
+					<div class="item" >a</div>
+					<div class="item" >b</div>
+					<div class="item" >c</div>
+					<div class="item" >d</div>
+					<div class="item" >e</div>
+					<div class="item" >f</div>
+				</div>
+			</div>
+			<!-- align-content: flex-end -->
+			<div class="tab">
+				<div class="title">
+					<p>align-content: flex-end;</p>
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox showbox-align-content" style="align-content: flex-end;">
+					<div class="item" >a</div>
+					<div class="item" >b</div>
+					<div class="item" >c</div>
+					<div class="item" >d</div>
+					<div class="item" >e</div>
+					<div class="item" >f</div>
+				</div>
+			</div>
+			<!-- align-content: center -->
+			<div class="tab">
+				<div class="title">
+					<p>align-content: center;</p>
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox showbox-align-content" style="align-content: center;">
+					<div class="item" >a</div>
+					<div class="item" >b</div>
+					<div class="item" >c</div>
+					<div class="item" >d</div>
+					<div class="item" >e</div>
+					<div class="item" >f</div>
+				</div>
+			</div>	
+			<!-- align-content: space-between -->
+			<div class="tab">
+				<div class="title">
+					<p>align-content: space-between;</p>
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox showbox-align-content" style="align-content: space-between;">
+					<div class="item" >a</div>
+					<div class="item" >b</div>
+					<div class="item" >c</div>
+					<div class="item" >d</div>
+					<div class="item" >e</div>
+					<div class="item" >f</div>
+				</div>
+			</div>
+			<!-- align-content: space-around -->
+			<div class="tab">
+				<div class="title">
+					<p>align-content: space-around;</p>
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox showbox-align-content" style="align-content: space-around;">
+					<div class="item" >a</div>
+					<div class="item" >b</div>
+					<div class="item" >c</div>
+					<div class="item" >d</div>
+					<div class="item" >e</div>
+					<div class="item" >f</div>
+				</div>
+			</div>
+			<!-- align-content: stretch -->
+			<div class="tab">
+				<div class="title">
+					<p>align-content: stretch;/*default*/</p>
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox showbox-align-content" style="align-content: stretch;">
+					<div class="item" >a</div>
+					<div class="item" >b</div>
+					<div class="item" >c</div>
+					<div class="item" >d</div>
+					<div class="item" >e</div>
+					<div class="item" >f</div>
+				</div>
+			</div>
+		</div>
+
+		<p>[ order ]</p>
+		<div class="sec">
+			<div class="tab" style="width: 980px;" >
+				<div class="title">
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox showbox-align-content" style="width: 960px; height: 40px">
+					<div class="item" >a</div>
+					<div class="item" >b</div>
+					<div class="item" >c</div>
+					<div class="item" style="order:-1; width:120px"> d (order:-1) </div>
+					<div class="item" >e</div>
+					<div class="item" >f</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	
+</body>
+</html>
