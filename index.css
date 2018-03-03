@@ -25,10 +25,11 @@ h1{
 	background-color: #fff;
 	padding:10px;
 	font-size: 20px;
+	background-color: #FFF0F5;
 }
 
 .sec {
-	overflow: hidden;
+	overflow: auto;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: flex-start;
