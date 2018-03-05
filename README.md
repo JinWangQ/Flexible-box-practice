@@ -14,4 +14,11 @@
 
 __See final Web Page at__ [here](https://jinwangq.github.io/Flexible-box-practice/)
 
+---
+### Take a Full-Page Screen in Chrome On Mac
+
+ 1. `Alt` + `Command` + I
+ 2. `Command` + `Shift` + P
+ 3. type "screenshot" ana choose "capture full size screenshot" 
+
 
