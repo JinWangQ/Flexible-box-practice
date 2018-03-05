@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 }
-
 body{
 	margin: 0 0 40px 0;
 	background-color: #FFF0F5;
@@ -119,6 +118,9 @@ h1{
 	height: 200px;
 	flex-wrap: wrap;
 	border: 1px dashed red;
+}
+.showbox-align-self {
+	align-self: 
 }
 .showbox-align-content .item:nth-child(1),
 .showbox-align-content .item:nth-child(2),

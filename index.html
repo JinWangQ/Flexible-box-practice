@@ -75,7 +75,7 @@
 			<div class="tab">
 				<div class="title">
 					<p>display: flex;</p>
-					<p>flex-diection: row-reverse;</p>
+					<p>flex-diection: column;</p>
 				</div>
 				<div class="showbox showbox-column">
 					<div class="item" style="flex: 1;">flex: 1</div>
@@ -88,7 +88,7 @@
 			<div class="tab">
 				<div class="title">
 					<p>display: flex;</p>
-					<p>flex-diection: showbox-column-reverse;</p>
+					<p>flex-diection: column-reverse;</p>
 				</div>
 				<div class="showbox showbox-column-reverse">
 					<div class="item" style="flex: 1;">flex: 1</div>
@@ -283,6 +283,21 @@
 			
 		<p>[ align-content ]</p>
 		<div class="sec">
+			<!-- align-self: flex-start -->
+			<div class="tab">
+				<div class="title">
+					<p>align-self: flex-start; <span style="color: red">/* compare to align-content*/</span></p>
+					<p>display: flex;</p>
+				</div>
+				<div class="showbox showbox-align-content" style="align-self: flex-start;">
+					<div class="item" >a</div>
+					<div class="item" >b</div>
+					<div class="item" >c</div>
+					<div class="item" >d</div>
+					<div class="item" >e</div>
+					<div class="item" >f</div>
+				</div>
+			</div>
 			<!-- align-items: flex-start -->
 			<div class="tab">
 				<div class="title">
